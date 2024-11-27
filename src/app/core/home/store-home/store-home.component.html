@@ -1,0 +1,36 @@
+<section class="p-3 mt-3">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-sm-4" *ngFor="let item of productsList">
+        <div class="card bg-light text-dark">
+          <h6 class="card-header">
+            <p class="card-title">{{ item.title }}</p>
+          </h6>
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <img
+                [src]="item.image"
+                [alt]=""
+                srcset=""
+                class="img-fluid w-50"
+              />
+            </div>
+            <p class="lead">{{ item.category }}</p>
+          </div>
+          <div class="card-footer text-muted">
+            <p class="lead">Price: {{ item.price }} $</p>
+            <p class="lead">Rating: {{ item.rating.rate }}</p>
+            <p class="lead">
+              <input
+                type="button"
+                value="AddToCart"
+                (click)="addToCart(item)"
+                class="btn btn-debug btn-warning"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

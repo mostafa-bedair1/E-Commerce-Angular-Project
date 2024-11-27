@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+body::before {
+  display: block;
+  content: "";
+}
+* {
+  /* font-family: 'Crimson Pro', serif; */
+  /* font-family: 'Patrick Hand', cursive;
+    font-family: 'Salsa', cursive; */
+  /* font-family: "Montserrat Alternates", sans-serif; */
+  /* font-family: "Patrick Hand", cursive; */
+  /* font-family: "Salsa", cursive; */
+  font-family: 'Dosis', sans-serif;
+  font-weight: bolder ;
+
+}
